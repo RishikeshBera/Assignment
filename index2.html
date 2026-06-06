@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(114, 16, 183);
+        }
+
+        .main-container {
+            margin: 10px;
+            height: 100vh;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 96vh;
+        }
+
+        #head {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: purple;
+        }
+
+        #head2 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+        .Plans {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .box1, .box2, .box3 {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            padding: 30px;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .lite, .pro, .unlimited {
+            background-color: rgba(131, 131, 214, 0.478);
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            padding-bottom: 20px;
+
+        }
+        .lite h1, .pro h1, .unlimited h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .lite p, .pro p, .unlimited p {
+            font-size: 16px;
+        }
+        .lite button, .pro button, .unlimited button {
+            background-color: rgb(94, 94, 199);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .pro {
+            position: relative;
+        }
+        #bestvalue {
+            position:absolute;
+            top:-10px;
+            left:50%;
+            transform: translateX(-50%);
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .box1 p, .box2 p, .box3 p {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main">
+            <h2 id="head">Pricing Plans</h2>
+            <h1 id="head2">Choose the perfect plan for your needs</h1>
+
+            <div class="Plans">
+                <div class="box1">
+                    <div class="lite">
+                        <h1>Lite</h1><br>
+                        <p>Ideal for individuals and small teams. Enjoy access to a curated selection of templates and
+                            basic customization options to get your projects started.</p><br>
+                        <h1>$6.99/month</h1>
+                        <h4>$83.88 billed annually</h4><br>
+                        <button>Choose Plan</button>
+                    </div>
+                    <br>
+                    <h2>For small Projects</h2>
+                    <p>⭘ 800+ design templates</p>
+                    <p>⭘ Essence customization options</p>
+                    <p>⭘ Regular updates</p>
+                    <p>⭘ Ideal for individuals and small teams</p>
+                </div>
+                <div class="box2">
+
+                    <div class="pro">
+                        <span id="bestvalue">Best Value</span>
+                        <h1>Pro</h1><br>
+                        <p>Perfect for growing teams, providing advanced design capabilities, an extensive library of
+                            premium templates, and integration with popular design tools.</p><br>
+                        <h1>$19.99/month</h1>
+                        <h4>$239.88 billed annually</h4><br>
+                        <button>Choose Plan</button>
+                    </div>
+                    <br>
+                    <h2>For Developing Teams</h2>
+                    <p>🗹 All lite benefits</p>
+                    <p>🗹 10,000+ premium template library</p>
+                    <p>🗹 Personalized customization</p>
+                    <p>🗹 Integration with 10+ design tools including Figma, Sketch, and Adobe XD</p>
+                    <p>🗹 Enhanced regular updates</p>
+                    <p>🗹 Perfect for growing teams</p>
+                </div>
+                <div class="box3">
+                    <div class="unlimited">
+                        <h1>Unlimited</h1><br>
+                        <p> Provides complete features for enterprises, including unlimited access to all templates,
+                            advanced customization, and seamless integration with various design tools.</p><br>
+                        <h1>$49.99/month</h1>
+                        <h4>$599.88 billed annually</h4><br>
+                        <button>Choose Plan</button>
+                    </div>
+                <br>
+                <h2>For Enterprises</h2>
+                <p>🗹 All pro benefits</p>
+                <p>🗹 Unlimited template library</p>
+                <p>🗹 Advanced customization </p>
+                <p>🗹 Integration with 25+ design tools including Figma, Sketch, and Adobe XD</p>
+                <p>🗹 Real-time updates</p>
+                <p>🗹 Best for large teams and enterprises</p>
+            </div>
+        </div>
+    </div>
+        </div>
+</body>
+
+</html>

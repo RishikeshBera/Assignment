@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: darkgray;
+        }
+        .main{
+            margin: 20px;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px;
+        }
+        .logo{
+            font-size:20px;
+        }
+        .sign-up{
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+            height: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-direction: column;
+        }
+        .content h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .input{
+            display: flex;
+            height: 40px;
+        }
+        .input input{
+            padding:  20px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 500px;
+            font-size: 16px;
+        }
+        .input button{
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            margin-top: 20px;
+        }   
+        .footer div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">Start BootStrap</div>
+            <div class="sign-up">Sign Up</div>
+        </div>
+        <div class="content">
+           <h1>Generate more leads with a<br> proffesional landing page!</h1>
+           <div class="input"><input type="text" placeholder="Enter your email...">
+            <button>Sign Up!</button></div>
+        </div>
+        <div class="footer">
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/418498671/NQ/KP/RP/12019713/qwq-500x500.png" alt="easy-to-use" width="100px" height="100px">
+                <h1>Fully Responsive</h1><br>
+                <p>This theme will look great on any <br>device,no matter the size!</p>
+            </div>
+            <div class="bootstrap">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7kivyrZF0HCjVIgFoutClncmMF721cKM3jAvx32wCw_ocd7B" alt="bootstrap" width="100px" height="100px">
+                <h1>Bootstrap 5 Ready</h1><br>
+                <p>Featuring the latest build of new <br>Bootstrap 5 framework!</p>
+
+            </div>
+            <div class="easy-to-use">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///9jZvFdYPC+v/nLzPpfYvFbX/Gpq/fg4fxhZPHy8v55fPP19f5xdPL+/v/Oz/r5+f7t7f2Sk/XU1ft2ePObnfZrbvJ/gvOKjPXc3PxmafH6+/9VWPDZ2vHGxvrk5PyztPi6u/mFh/SjpfdTVvC8vfnR0vKUlvausPiIivV8f/ORlPXi5u/7AAAD+klEQVR4nO2da1PqMBCGSySFFFvaUu4erupR/P//76Dj0QQL1Mw2mwnv88kZZ0gf0u5mk9BEEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANmSjO38YZfSC3UoKf5BVl1ywI1XHH5TsECvmU8ktdYKc5qSGhVc9+I6SBalhP+Y2+kHchyEMb9ZQHdPiV2Z0/8d3xGvLUJbDLifDUrZt2CP93N/Tg6ElMHQHDG2BoTtgaAsM3QFDW2DoDhjaAkN3wNAWGLoDhrbA0B0wtOWq4TJJaFe7zsFkmHXLajDrtrD0/AMmw60USgk1vidttBYew/niYzVBxTPaVuvgMRyL//9VQ9Jma2AxXO6+FvlldUfa7k94DF+/tzGox9WStOVTeO7SJ32jhpitSZs+gccwqYSmGE8T0rZNmLLF80DvRTl9Jm3cgGtM00/1XpSTEWnrOmyjtv5U31KkFq2FVMaR9/hBc1RxSdr+N4yGy9VEVxRlOyGVtXraKiNrpH9IL+ETVsNsPtDjjRi0kfyZK+D1TGh3qoxfSC/iA/YafxObDyN5PcVumK1i/WGMS9pdoB4YHuNNpSuqKXHy98AwWhujVNmhLRl9MIySsdGLcY9yjsoLwx/jm7+ExYYnhvkmNZL/G13y98QwilbG5n6RkoVUbwyz4cIoGXdzoivxxjCKioGe/OXDhuZKPDKM8l5HjzeLPUlI9ckwWm4WRkglyf1eGR7jja4oSJatPDOMVrrhmOJKPDMc6mV/HF4fLrcTLWME+BzmL4HH0uJg5kOiet8bw2w0MWoosjLRG8OuOe82CW1cmj8Zhb4oqUal3hiGXh8ea3xD8CW0Gv9knkbR/nDeA0Nzrk0egptr65rzpbPQ5kuz0Oe816/mukUL2/x4DUdV4GtPm8DXD5dGQR/iGnDo6/jzgz4DLK/vxcjuk8uceYa5DOdGrSSu76dJNtP0ItW+PpMyGY7Mccz1PVH9Ukh1GVE/GuIxLMz5mOv72tZGl59BpHWfw2PY065XyQZBdNvoZTBiW9cWh2Gi3aPqscl+9rcGXfi+nFMTbVgMi+orjspq1eTjmhrWFJbMu6Blp1mttG92l9ZNkvM8h5/Locc033Ac82yM786gFnUOPIbZPj7GfqnGjacrhml8JVtIoWpHDUz5MH/apelu9YvfzPzZ7wYXOYzrb3i2UVteFL+cb8rvL3Pm6+Ku8dsHhrbA0B0wtAWG7oChLTB0BwxtgaE7YGgLDN0BQ1tg6A4Y2gJDd8DQlht6r/7H2QiMtH82gj/AEIY3Zxj+eU/hn9kV/rlrN3B23vu7WbgPPdSYu3gJJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIkX+UYFsKxWMmwAAAAABJRU5ErkJggg==" alt="easy-to-use" width="100px" height="100px">
+                <h1>Easy to Use</h1><br>
+                <p>Ready to use with your own content,<br>or customize the source files! </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
